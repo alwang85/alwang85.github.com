@@ -54,4 +54,21 @@ Alternatively:
 
 AngularJS docs -> [http://docs.angularjs.org/tutorial/step_05](http://docs.angularjs.org/tutorial/step_05) . Scroll down to A Note on Minification.
 
-Also alternatively, the Angular ng-annotate can be installed and run manually/automatically converting your original code to work with minification.
+Also alternatively, the [ng-annotate library](https://www.npmjs.com/package/ng-annotate) can be installed and run manually/automatically converting your original code to work with minification.
+
+In the readme, there are automation tools support for grunt, gulp, rails, and a whole lot more.
+
+For the gulp config files, its as simple as adding:
+
+    var ngAnnotate = require('gulp-ng-annotate'); //don't forget to npm install this!'
+    ..//somewhere in a sample task definition
+
+    gulp.task('buildJSProduction', function () {
+        return gulp.src(['./browser/js/app.js', './browser/js/**/*.js'])
+            .pipe(concat('main.js'))
+            .pipe(babel())              //ES6 compatability
+            .pipe(ngAnnotate())         //allows for minification while preserving dependency injection variable names
+            .pipe(uglify())             //we're using ngAnnotate to support minification :)
+            .pipe(gulp.dest('./public'));
+    });
+
