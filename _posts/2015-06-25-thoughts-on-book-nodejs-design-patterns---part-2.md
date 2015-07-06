@@ -2,10 +2,9 @@
 layout: post
 title: "Thoughts on book: Node.js Design Patterns   part 2"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
 
 ## Chapter 7- Scalability and Architectural Patterns
 

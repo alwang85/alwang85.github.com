@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [Angular, Angular Minification]
 ---
-{% include JB/setup %}
 
 ## Problem
 

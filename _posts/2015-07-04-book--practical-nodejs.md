@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "book  Practical Node.js"
+title: "Book Review- Practical Node.js"
 description: ""
-category: 
+categories: [reviews]
 tags: []
 ---
-{% include JB/setup %}
 
 # Overview
 
@@ -42,9 +41,9 @@ This was a great and practical chapter:
  9. Different processes with Grunt
  10. Continuous Integration with  cloud testing with TravisCI and codeship
 
- ### Conclusion
+### Conclusion
 
- This was a wonderful book to help build real-world scalable web apps with best practices and scalability in mind. I really enjoyed the variety of topics covered in this book, along with the up to date best practices of the respective best in class Node.js specific libraries. The other wonderful book I'm still reading is "Node.js Design Patterns" has some more in depth examples and use cases, however is more difficult to digest at once due to lots of theory + depth. With these 2 books, and the myriad of modules available in the npm ecosystem, an informed engineer can do so much to leverage the advantages of Node.js.
+This was a wonderful book to help build real-world scalable web apps with best practices and scalability in mind. I really enjoyed the variety of topics covered in this book, along with the up to date best practices of the respective best in class Node.js specific libraries. The other wonderful book I'm still reading is "Node.js Design Patterns" has some more in depth examples and use cases, however is more difficult to digest at once due to lots of theory + depth. With these 2 books, and the myriad of modules available in the npm ecosystem, an informed engineer can do so much to leverage the advantages of Node.js.
 
 
 

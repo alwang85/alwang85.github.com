@@ -1,10 +1,14 @@
 ---
-layout: post
-title: "setTimeout not working in Angular"
-description: ""
-category: 
-tags: []
+layout: media
+title: "Impact Mission"
+image:
+  teaser: "http://i.imgur.com/3kQCQGo.png"
+category: projects
+caption_header: WineN- Wine store
+caption: MEAN stack ecommerce platform /w Cart sessions /w localStorage, cloud cart syncing, product recommendation engine
+tags: [Angular.js, MEAN]
 ---
+
 
 # Problem
 

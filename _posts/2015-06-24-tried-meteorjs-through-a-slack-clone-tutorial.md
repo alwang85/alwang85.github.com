@@ -2,10 +2,9 @@
 layout: post
 title: "Tried Meteor.js through a Slack clone tutorial"
 description: ""
-category: 
+categories: [post]
 tags: []
 ---
-{% include JB/setup %}
 
 At scotch.io I found an intro to [Meteor.js](https://scotch.io/tutorials/building-a-slack-clone-in-meteor-js-getting-started) tutorial through creating a Slack clone. There were some unclear instructions in where code was to be placed etc, but it was decently easy to debug when you cross reference the comments and source code. Links to my [repository](https://github.com/alwang85/ember_slack) and [live site](http://alwang85-slack.meteor.com/random).
 

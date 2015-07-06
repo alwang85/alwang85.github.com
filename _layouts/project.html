@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+<div class="container">
+
+    {% include header.html %}
+
+    {% if site.default_column == "two" %}
+
+    <div class="page-content col-sm-8">
+      {{ content }}
+    </div>
+    {% include sidebar.html %}
+
+    {% else %}
+
+    <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+    </div>
+
+    {% endif %}
+
+    {% include footer.html %}
+
+</div>
+
+</body>
+
+</html>
+
+
+
+{% include page_pagination.html%}
+{% include comments.html %}
