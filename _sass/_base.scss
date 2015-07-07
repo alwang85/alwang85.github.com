@@ -395,3 +395,18 @@ $color_tuatara_20_approx: rgba(52, 52, 52, 0.2);
     }
   }
 }
+
+.carousel-caption{
+  background: rgba(0,0,0,0.5);
+  bottom: 0px !important;
+  position: static !important;
+}
+
+.carousel-indicators {
+  bottom: 0px !important;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+  height: 400px !important;
+}

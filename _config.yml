@@ -1,6 +1,6 @@
 ### Site info:
 title: Alex Wang's Site
-tagline: Keep life Interesting
+tagline: Making Everyday Interesting
 author: Alexander Wang
 email: alwang85@gmail.com
 description: "A coder's retrospective." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
@@ -13,6 +13,7 @@ teaser: "https://placehold.it/280x200"
 ### Personal info and site tools info:
 twitter_username: alwang85
 github_username:  alwang85
+stackoverflow_username: 2026166/alwang85
 disqus_shortname: alwang85
 favicon:     "/images/favicon.ico"
 aboutme: Hi, this is Alex Wang. Thanks for visiting! # these are shown on aboutme-sidebar.

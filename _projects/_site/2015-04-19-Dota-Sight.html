@@ -1,0 +1,39 @@
+<h1 id="problem">Problem</h1>
+
+<p>In Angular, you may have experienced code such as the following not behaving as expected with setTimeout:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Alex&quot;</span><span class="p">;</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span><span class="p">;</span>
+<span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+
+<span class="c1">//$scope.name remains &quot;Alex&quot; after 3 seconds</span></code></pre></div>
+
+<p>When setTimeout runs code, it actually evaluates code in another thread outside of the Angular context. Hence, our scope is not updated. Here are two ways to fix this issue:</p>
+
+<h1 id="solutions">Solutions</h1>
+
+<p>$timeout is an Angular resource that can replace setTimeout and run code in the Angular context. Note: You have to dependency inject $timeout to use it. Usage:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Alex&quot;</span><span class="p">;</span>
+<span class="nx">$timeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span><span class="p">;</span>
+<span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+
+<span class="c1">//$scope.name changes to &quot;John&quot; after 3 seconds</span></code></pre></div>
+
+<p>$apply is another Angular resource you use to tell Angular the code is in Angular context, so watch for changes and digest please! Usage:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Alex&quot;</span><span class="p">;</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$scope</span><span class="p">.</span><span class="nx">$apply</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span><span class="p">;</span>
+  <span class="p">);</span>
+<span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+
+<span class="c1">//$scope.name changes to &quot;John&quot; after 3 seconds</span></code></pre></div>
+
+<p>Finally, please note that resource is used broadly, as in something that came with Angular.</p>
+
+<p>Hopefully that solved your problems with setTimeout! Comment if there’s any comments or questions!</p>
+

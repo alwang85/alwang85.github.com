@@ -1,11 +1,10 @@
 ---
 layout: media
-title: "Impact Mission"
+title: "Dota-Sight"
 image:
-  teaser: "http://i.imgur.com/3kQCQGo.png"
+  teaser: "http://i.imgur.com/CQXeNeT.png"
 category: projects
-caption_header: WineN- Wine store
-caption: MEAN stack ecommerce platform /w Cart sessions /w localStorage, cloud cart syncing, product recommendation engine
+excerpt: Player intelligence for DotA 2
 tags: [Angular.js, MEAN]
 ---
 
