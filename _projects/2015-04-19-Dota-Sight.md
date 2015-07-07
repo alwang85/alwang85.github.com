@@ -8,49 +8,55 @@ excerpt: Player intelligence for DotA 2
 tags: [Angular.js, MEAN]
 ---
 
+# Synopsis
 
-# Problem
+Dota-Sight is a opponent intelligence tool for the popular game DotA 2. Given a server log entry upon joining a game (when a match is found), our app parses the log and pulls player character specific history from the site www.dotabuff.com. With the stats, combined with general aggregate date for player agnostic statistics, we supply some prediction algorithms of a side's win rate based on the current team lineup.
 
-In Angular, you may have experienced code such as the following not behaving as expected with setTimeout:
+You can find a copy of the live app on Heroku at [http://dota-sight.herokuapp.com](http://dota-sight.herokuapp.com), and the repository at [https://github.com/dkstevekwak/dota](https://github.com/dkstevekwak/dota).
 
-{% highlight javascript %}
-$scope.name = "Alex";
-setTimeout(function(){
-  $scope.name = "John";
-}, 3000);
 
-//$scope.name remains "Alex" after 3 seconds
-{% endhighlight %}
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  </ol>
 
-When setTimeout runs code, it actually evaluates code in another thread outside of the Angular context. Hence, our scope is not updated. Here are two ways to fix this issue:
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://i.imgur.com/CQXeNeT.png" alt="Interface">
+      <div class="carousel-caption">
+        <h3>Interface</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://i.imgur.com/mEzfOR0.png" alt="upload">
+      <div class="carousel-caption">
+        <h3>Uploading Logs</h3>
+      </div>
+    </div>
+  </div>
 
-# Solutions
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-$timeout is an Angular resource that can replace setTimeout and run code in the Angular context. Note: You have to dependency inject $timeout to use it. Usage:
+## Features:
 
-{% highlight javascript %}
-$scope.name = "Alex";
-$timeout(function(){
-  $scope.name = "John";
-}, 3000);
+1. Server side caching with memcached for general character data
+2. Angular interface for selecting characters and real-time calculated stats
+3. Production/Development servers used to test features before pushing live
+4. Data crawling/parsing with Node.js
+5. Google Analytics implemented with ui-router compatability as we tested app with live users 2 days after starting
 
-//$scope.name changes to "John" after 3 seconds
-{% endhighlight %}
+## Tools used:
 
-$apply is another Angular resource you use to tell Angular the code is in Angular context, so watch for changes and digest please! Usage:
-
-{% highlight javascript %}
-$scope.name = "Alex";
-setTimeout(function(){
-  $scope.$apply(function(){
-    $scope.name = "John";
-  );
-}, 3000);
-
-//$scope.name changes to "John" after 3 seconds
-{% endhighlight %}
-
-Finally, please note that resource is used broadly, as in something that came with Angular.
-
-Hopefully that solved your problems with setTimeout! Comment if there's any comments or questions!
+Gulp, AngularUI Router, Lodash, cheerio, Memcached, request, RegEx, async, Mongoose, Google Analytics, Heroku, Bootstrap, MongoDB, ExpressJS, AngularJS, and Node.js.
 
