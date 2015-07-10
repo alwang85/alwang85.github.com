@@ -12,7 +12,8 @@ Here's a list of my projects sorted by recency:
 
 <ul class="tags-box">
 <div class="tiles">
-{% for project in site.projects %}
+{% assign projects = site.projects %}
+{% for project in projects reversed %}
 	{% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->
