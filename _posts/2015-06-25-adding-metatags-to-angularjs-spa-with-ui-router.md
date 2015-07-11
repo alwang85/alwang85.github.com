@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "Adding Metatags to AngularJS SPA with ui router"
 description: ""
 categories: [Angularjs, books]

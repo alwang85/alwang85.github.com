@@ -11,7 +11,7 @@ At scotch.io I found an intro to [Meteor.js](https://scotch.io/tutorials/buildin
 Syntax stuff aside, there were a few interesting differences compared to the MEAN stack:
 
 1. Meteor.js is both server side code + client side code
-2. In Node I'm used to declaring file depencies, while Ember.js loads many files automatically (and alphabetically), making naming very important for non-special directories (client/, server/, public/, private/, test/)
+2. In Node I'm used to declaring file depencies, while Meteor.js loads many files automatically (and alphabetically), making naming very important for non-special directories (client/, server/, public/, private/, test/)
 
 ## Gems
 
