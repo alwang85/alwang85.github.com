@@ -52,7 +52,7 @@ The drawbacks of approach #1 is that any future updates to the app requires a ma
 
 ## Last but not least
 
-In a sense, Dota-Sight started from a 2 day internal hackathon we had a Fullstack Academy. It actually contains the least modular code I've ever written. Before I attempt to try the above technologies to further improve Dota-Sight, I will refactor my working _legacy_ code to adhere to JS best practices. Another post for the before/after!
+In a sense, Dota-Sight started from a 2 day internal hackathon we had a Fullstack Academy. It actually contains the least modular code I've ever written. Before I attempt to try the above technologies to further improve Dota-Sight, I will refactor my working _legacy_ code to adhere to JS best practices. I plan to utilize Require.JS instead of using Node.js' CommonJS-style dependency management for this project. Another post for the before/after!
 
 
 
