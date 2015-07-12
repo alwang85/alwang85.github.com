@@ -43,6 +43,7 @@ In order to pass along a node-webkit app:
 I attempted to use the "request" and "cheerio" libraries on the client side to pull data from www.dotabuff.com, and that worked. The problem was passing on that information to the front end. If I tried passing the data as a url parameter, the data caused a HTTP 414 error due to a long URI (the urls are long with a big json string). Since I can't change the server settings on the heroku instance, in addition to many browsers not supporting such long urls anyway, I have to change my methodology.
 
 Approaches I could attempt include:
+
 1. Converting my web app into a client side app
 2. Posting the client pulled data onto the server, and then piping it to the web client based on a session token
 3. ??? - Investigate other technologies such as web components and chrome extensions
