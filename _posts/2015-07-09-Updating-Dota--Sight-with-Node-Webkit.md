@@ -10,7 +10,7 @@ tags: []
 
 Dota-Sight has many features that are useful, however there are two issues that limit its growth and potential to scale. Fortunately a program created with node webkit can help resolve that issue.
 
-Currently, a user has to manually navigate to a folder to copy logs before our server can parse the player IDs and retrieve data from dotabuff.com. Currently, the manual action of navigating to a folder has prevented this app from achieving greater traction. Also, another potential concern that would only matter when there's sufficient traffic, is that the gathering of specific player data from dotabuff.com is actually a web scrape of 10 players. If the dotabuff servers blocked our service, Dota-Sight would not work.
+Currently, a user has to manually navigate to a folder to copy logs before our server can parse the player IDs and retrieve data from dotabuff.com. The manual action of navigating to a folder has prevented this app from achieving greater traction. Also, another potential concern that would only matter when there's sufficient traffic, is that the gathering of specific player data from dotabuff.com is actually a web scrape of the profile pages of 10 players. If the dotabuff servers blocked our server, Dota-Sight would not work.
 
 ![Dota-Sight Structure](http://i.imgur.com/mZUkoVt.jpg)
 
