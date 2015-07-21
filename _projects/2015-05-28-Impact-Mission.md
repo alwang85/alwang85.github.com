@@ -2,7 +2,7 @@
 layout: media
 title: "Impact Mission"
 image:
-  teaser: "http://i.imgur.com/Q2c2Ie9.png"
+  teaser: "http://i.imgur.com/Q2c2Ie9l.png"
 category: projects
 excerpt: Pledging activities for a cause
 tags: [Angular.js, MEAN]
@@ -28,31 +28,31 @@ You can find a copy of the live app on Heroku at [http://impactmission.io](http:
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://i.imgur.com/0vjuN4N.png" alt="ABOUT">
+      <img src="http://i.imgur.com/0vjuN4Nl.png" alt="ABOUT">
       <div class="carousel-caption">
         <h3>Intro</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://i.imgur.com/sLIGB9J.png" alt="current impacts">
+      <img src="http://i.imgur.com/sLIGB9Jl.png" alt="current impacts">
       <div class="carousel-caption">
         <h3>Current Impacts</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://i.imgur.com/VtXoDqB.png" alt="create impact">
+      <img src="http://i.imgur.com/VtXoDqBl.png" alt="create impact">
       <div class="carousel-caption">
         <h3>Create Impact</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://i.imgur.com/V5t5GYb.png" alt="personal dashboard">
+      <img src="http://i.imgur.com/V5t5GYbl.png" alt="personal dashboard">
       <div class="carousel-caption">
         <h3>Personal Dashboard</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://i.imgur.com/X1kJxBN.png" alt="inbox">
+      <img src="http://i.imgur.com/X1kJxBNl.png" alt="inbox">
       <div class="carousel-caption">
         <h3>Inbox</h3>
       </div>

@@ -2,7 +2,7 @@
 layout: media
 title: "Dota-Sight"
 image:
-  teaser: "http://i.imgur.com/CQXeNeT.png"
+  teaser: "http://i.imgur.com/CQXeNeTl.png"
 category: projects
 excerpt: Player intelligence for DotA 2
 tags: [Angular.js, MEAN]
@@ -25,13 +25,13 @@ You can find a copy of the live app on Heroku at [http://dota-sight.herokuapp.co
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://i.imgur.com/CQXeNeT.png" alt="Interface">
+      <img src="http://i.imgur.com/CQXeNeTl.png" alt="Interface">
       <div class="carousel-caption">
         <h3>Interface</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://i.imgur.com/mEzfOR0.png" alt="upload">
+      <img src="http://i.imgur.com/mEzfOR0l.png" alt="upload">
       <div class="carousel-caption">
         <h3>Uploading Logs</h3>
       </div>
