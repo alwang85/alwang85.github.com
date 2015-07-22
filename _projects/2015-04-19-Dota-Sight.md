@@ -63,7 +63,7 @@ Gulp, AngularUI Router, Lodash, cheerio, Memcached, request, RegEx, async, Mongo
 
 ## Expansion:
 
-Further improved to automate server_log.txt parsing through an Autohotkey script and node-webkit client. Details on the process are [here](Updating Dota-Sight with Node Webkit).
+Further improved to automate server_log.txt parsing through an Autohotkey script and node-webkit client. Details on the process are [here](http://alwang85.github.io/reviews/2015/07/09/Updating-Dota--Sight-with-Node-Webkit.html).
 
 
 
