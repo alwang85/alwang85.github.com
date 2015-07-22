@@ -75,7 +75,7 @@ You can find a copy of the live app on Heroku at [http://impactmission.io](http:
 1. Fitbit/Jawbone OAuth 2.0 integration & session management & metric standardization
 2. Event triggered real time updates
 3. Query caching with memcached
-4. Angular code optimization with js-data (Object Relational Mapping layer + datastore)
+4. Increased perceived front-end responsiveness and Angular code optimization with js-data (Object Relational Mapping layer + datastore)
 5. Real time chart/stat updates through socket.io
   - When user joins an impact
   - When a user's data is synced with fitness tracking device
