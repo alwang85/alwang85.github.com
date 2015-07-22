@@ -59,5 +59,11 @@ You can find a copy of the live app on Heroku at [http://dota-sight.herokuapp.co
 
 ## Tools used:
 
-Gulp, AngularUI Router, Lodash, cheerio, Memcached, request, RegEx, async, Mongoose, Google Analytics, Heroku, Bootstrap, MongoDB, ExpressJS, AngularJS, and Node.js.
+Gulp, AngularUI Router, Lodash, cheerio, Memcached, request, RegEx, async, Mongoose, Google Analytics, Heroku, Bootstrap, MongoDB, ExpressJS, AngularJS, and Node.js.  
+
+## Expansion:
+
+Further improved to automate server_log.txt parsing through an Autohotkey script and node-webkit client. Details on the process are [here](Updating Dota-Sight with Node Webkit).
+
+
 
